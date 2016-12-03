@@ -1,0 +1,125 @@
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+  float: left;
+}
+
+#firstname {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: Avenir, Arial;
+  letter-spacing: 3px;
+  padding-right: 10px;
+}
+
+#lastname {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Futura, sans-serif;
+  letter-spacing: 5px;
+}
+
+main img {
+  margin-bottom: 0px;
+}
+main img:first-child {
+  width: 100%;
+}
+
+main img:nth-child(2) {
+  display: none;
+}
+
+main img:nth-child(3) {
+  display: none;
+}
+
+#firstrow {
+  width: 100%;
+  height: 50%;
+  margin-top: 0px;
+  background-color: red;
+}
+
+#firstrow img:first-child {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+#firstrow img:nth-child(2) {
+  width: 25%;
+  height: auto;
+  float: right;
+}
+
+#firstrow img:nth-child(3) {
+  width: 25%;
+  height: auto;
+  float: right;
+}
+
+#secondrow {
+  width: 100%;
+  background-color: blue;
+  height: 50%;
+}
+
+#secondrow img:first-child {
+  height: auto;
+  width: 50%;
+  float: right;
+}
+
+#secondrow img:nth-child(2) {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+#thirdrow {
+  background-color: green;
+  height: 50%;
+}
+
+#thirdrow img:first-child {
+  float: right;
+  height: auto;
+  width: 50%;
+}
+
+#thirdrow img:nth-child(2) {
+  width: 50%;
+  float: left;
+  height: auto;
+}
+
+@media (min-width: 501px) and (max-width: 960px) {
+  main img:first-child {
+    display: none;
+  }
+  main img:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  #firstname, #lastname {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  main img:first-child {
+    display: none;
+  }
+  main img:nth-child(3) {
+    display: block;
+    width: 100%;
+  }
+  #firstname, #lastname {
+    font-size: 26px;
+  }
+  section img:hover {
+    opacity: 0.5;
+  }
+}
